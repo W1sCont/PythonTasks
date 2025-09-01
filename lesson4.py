@@ -19,7 +19,7 @@
 # print(text != "hello")
 
 # char = input("Input letter: ")
-# print(char in " oiuyeaOIUYEA") #operator in (not in)
+# print(char in "oiuyeaOIUYEA") #operator in (not in)
 
 # number = int(input("Enter a number: "))
 # if number > 0:
