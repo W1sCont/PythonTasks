@@ -7,10 +7,12 @@ if option == "a":
     print("Введіть два числа: ")
     num1 = int(input("Початок зрізу: "))
     num2 = int(input("Кінець зрізу: "))
-    print(text[num1:num2])
+    if num2 > num1:
+        print(text[num1:num2])
+    else:   
+        print("Введіть коректні дані!")
 elif option == "b":
     number = int(input("Введіть номер символа: "))
-    
     if 0 <= number < len(text):
         print(text[number])
 elif option == "c":
