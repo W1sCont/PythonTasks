@@ -1,4 +1,4 @@
-#1 ++
+#1 
 # num1 = int(input("Enter number 1: "))
 # num2 = int(input("Enter number 2: "))
 
@@ -14,24 +14,37 @@
 
 
 
-#2 ++
+#2 
 # number = int(input("Enter a number: "))
 # result = 1
 # for char in range(1, number + 1):
 #     result *= char
-# print(result)
+# print(f"Факторіал числа {number} = {result}")
 
 
 
 
-# 3
+# 3 
 # name = input("Enter your name: ")
 # counter = 1
+# char = len(name)
 # while len(name) > 0:
 #     print(name * counter)
 #     counter += 1
-#     if len(name) > 100:
+#     char += len(name)
+#     if char > 100:
 #         break
 
 
 #4 
+# numbers = input("Введіть числа через пробіл: ")
+# print(numbers)
+# counter = 0
+# counter_2 = 0
+# for char in numbers:
+#     if char in "2468":
+#         counter += 1
+#     elif char in "13579":
+#         counter_2 += 1
+# print(f"Парних чисел - {counter}\nНе парних чисел - {counter_2}")
+       
