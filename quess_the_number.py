@@ -13,7 +13,7 @@ import time
 # 2 якщо користувач замість числа вводить 0 програма закривається
 
 
-computer_number = random.randint(1, 100)  # випадкове число від 1 до 100
+computer_number = random.randint(1, 10)  # випадкове число від 1 до 100
 attempts = 0
 
 start_time = time.time()
@@ -21,7 +21,10 @@ start_time = time.time()
 
 while True:
     user_number = int(input("Enter a number: "))
-    attempts += 1
+    if user_number == 0:
+        break
+    else:
+        attempts += 1
 
     if computer_number > user_number:
         print("My number >")
@@ -33,4 +36,16 @@ while True:
 
         print(f"Grats {computer_number}. Your attempt {attempts}")
         print(f"result rime {round(result_time, 2)} sec")
-        break
+        yn = input("Continue enter 'y', for break enter 'n' " )
+        
+        if yn == "y":
+            continue
+        elif yn == "n":
+            break
+        
+            
+            
+            
+            
+
+        
