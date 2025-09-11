@@ -1,28 +1,29 @@
 # 1
-# memory = 0
 # counter = 0
-# result = 0
-# # num = "113"
-# for num in range(100, 1000):
+
+# for num in range(100,1000):
+
 #     num = str(num)
-#     for n in num:
-#         if n == num[0] and n == num[1]:
-#             counter += 1
-#         elif n == num[1] and n == num[2]:
-#             counter += 1
-#         elif n == num[0] and n == num[2]:
-#             counter += 1
-#     if counter > 0:
-#         memory +=1
-# result += memory
+#     if num[0] == num[1]:
+#         counter += 1
+        
+#     elif num[1] == num[2]:
+#         counter += 1
+        
+#     elif num[0] == num[2]:
+#         counter += 1
 
-# print(result)
+# print(f"В діапазоні від 100 до 999 є {counter} числа у яких дві однакові цифри")
 
+# 2
+# numbers = range(2, 100)
+# counter = 0
+# for char in numbers:
+#     if char % 2 == 0 and char % 3 == 0 or char % 3 == 0 and char % 5 == 0 or char % 2 == 0 and char % 5 == 0:
+#         counter += 1
+#         print(counter, char)
 
-
-# 2 ------
-numbers = range(2, 101)
-
+# print(counter)
 
 
 # 3

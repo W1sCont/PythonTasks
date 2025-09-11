@@ -27,7 +27,6 @@ while True:
         break
     else:
         attempts += 1
-        print(computer_number) #
 
     if computer_number != user_number:
         print(f"" if 1 > abs(computer_number - user_number) < 10 else "Гаряче" if 11 > abs(computer_number - user_number) < 20 else "Тепло" if 21 > abs(computer_number - user_number) < 99 else "Холодно"   )
@@ -38,19 +37,20 @@ while True:
         print(f"Grats {computer_number}. Your attempt {attempts}")
         print(f"result rime {round(result_time, 2)} sec")
         yes_no = input("Продовжити введіть y, для завершення введіть n: ")
-        # break
         
         if yes_no == "n":
             break
         elif yes_no == "y":
             computer_number = random.randint(1, 100)
             continue
-        # else:
-        #     while True:
-        #         yes_no = input("Продовжити введіть y, для завершення введіть n: ")
+        else:
+            while True:
+                yes_no = input("Продовжити введіть y, для завершення введіть n: ")
             
-        #         if yes_no in "yn":
-        #             break
+                if yes_no in "yn":
+                    break
+                else:
+                    continue
 
 
             
