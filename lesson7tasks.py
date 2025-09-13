@@ -34,7 +34,7 @@
 # dell_6 = "6"
 
 # for char in user_number:
-#     if not char == dell_3 and not char == dell_6:
+#     if char != dell_3 and char != dell_6:
 #         memory += char
     
 # print(memory)
@@ -44,7 +44,7 @@
 # range_2 = int(input("Ente a second range num: "))
 # user_number = int(input("Your number: "))
 
-# while 2>1:
+# while True:
 #     if user_number not in range(ragne_1, range_2 + 1):
 #         print("Number not in range")
 #         user_number = int(input("Your number: "))
