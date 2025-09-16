@@ -43,19 +43,27 @@
 # print(f"{memory}{znak}")
 
 
-# 1 3 --
+# 1 3 ++
 # Дан рядок. Порахуйте, скільки символів у рядку
 # зустрічаються у ньому більше ніж один раз.
 
-text = input("Enter text: ")
+# text = input("Enter text: ")
 
-count = 0
-memory = ""
-text_set = set(text)
+# count = 0
+# memory = ""
+# memory_2 = ""
+# text_set = set(text)
+# for char in text:
+#     if char in memory:
+#         memory_2 += char
+#     else:
+#         memory += char
 
+# for i in text_set:
+#     if i in memory_2:
+#         count += 1 
 
-
-print(count)
+# print(count)
 
 # i = 0
 # while i < len(text):
