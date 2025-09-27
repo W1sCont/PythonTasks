@@ -6,24 +6,25 @@ import random
 # елементів, порахувати кількість додатних елементів, порахувати
 # кількість нулів. Результати вивести на екран.
 
-numbers = [random.randint(-20, 20) for _ in range(10)]
-memory_minus = []
-memory_plus = []
-zero = 0
-print(numbers)
-for char in numbers:
-    if char < 0:
-        memory_minus.append(char)
-    elif char > 0:
-        memory_plus.append(char)
-    else:
-        zero += 1
+# numbers = [random.randint(-20, 20) for _ in range(10)]
+# memory_minus = []
+# memory_plus = []
+# zero = 0
+# print(numbers)
+# for char in numbers:
+#     if char < 0:
+#         memory_minus.append(char)
+#     elif char > 0:
+#         memory_plus.append(char)
+#     else:
+#         zero += 1
 
-print(f"мінімальний елемент {min(numbers)}")
-print(f"максимальний елемент {max(numbers)}")
-print(memory_minus) # дописати саме к-сть
-print(memory_plus)
-print(zero)
+# print(f"мінімальний елемент {min(numbers)}")
+# print(f"максимальний елемент {max(numbers)}")
+# print(f"кількість від'ємних елементів - {len(memory_minus)} {memory_minus}")
+# print(f"кількість додатних елементів - {len(memory_plus)} {memory_plus}")
+# print(f"кількість нулів - {zero}")
+
 
 # 2. Дан список з словами. Залиште в цьому списку лише слова,
 # що починаються з великої літери.
@@ -63,6 +64,26 @@ print(zero)
 # list_float). В кожному списку повинні бути лише ті дані, яким
 # він відповідає.
 
+# types_list = [23, "Python", True, 55.24, 32, "C++", False, 23.11, True, "Java", 55, 123.87]
+# list_int = []
+# list_str = []
+# list_bool = []
+# list_float = []
+
+# for char in types_list:
+#     if type(char) == int:
+#         list_int.append(char)
+#     elif type(char) == str:
+#         list_str.append(char)
+#     elif type(char) == bool:
+#         list_bool.append(char)
+#     elif type(char) == float:
+#         list_float.append(char)
+    
+# print(f"Список тип int - {list_int}")
+# print(f"Список тип str - {list_str}")
+# print(f"Список тип bool - {list_bool}")
+# print(f"Список тип float - {list_float}")
 
 
 
@@ -72,3 +93,15 @@ print(zero)
 # отриманий список на екрані. Передбачається, що списки мають
 # однакову довжину. Наприклад, якщо користувач вводить списки
 # [1, 2, 3] та [4, 5, 6], програма повинна вивести [5, 7, 9].
+
+
+# list_1 = [1,2,3,4,5,5,4,3,2,4,10,15]  # input("Введіть перший список: ").split()
+# list_2 = [6,7,8,9,10,11,12,13,14,15,40,78]  # input("Введіть другий список: ").split()
+# list_3 = []
+# count = 0
+
+# for ls in list_1:
+#     list_3.append(ls + list_2[count])
+#     count += 1
+
+# print(list_3)
