@@ -134,70 +134,13 @@
 
 # 12
 
-room = [
-    ['*', '*', '*', '*', '*',],
-    ['*', '*', '*', '*', '*',],
-    ['*', '*', 'R', '*', '*',],
-    ['*', '*', '*', '*', '*',],
-    ['*', '*', '*', '*', '*',]
-]
-
-print(room[0])
-print(room[1])
-print(room[2])
-print(room[3])
-print(room[4])
-
-# raw_input = (input("Enter way (RIGHT, LEFT, UP, DOWN): "))
-# column_input = int(input("Enter step: "))
-
-way = 2
-step = 2
-
-while True:
-    
-    raw = way
-    column = step
-    way_input = input("Enter way (RIGHT, LEFT, UP, DOWN): ").lower()
-    step_input = int(input("Enter step or 0 to break: "))
-
-    if way_input == "0":
-        break
-        
-    # if 0 > raw < 4:         # зробити перевірку поля
-    #     continue
-    # if 0 > column < 4:
-    #     continue
-
-    if way_input == "r": # "right":
-        raw = way
-        column += step_input
-    elif way_input == "l": #left":
-        raw = way
-        column -= step_input 
-    elif way_input == "u": #up":
-        raw -= step_input
-        column = column
-    elif way_input == "d": #down":
-        raw += step_input
-        column = column
-
-    room[way][step] = "*"
-    room[raw][column] = "R"
-    way = raw
-    step = column
-
-    print(room[0])
-    print(room[1])
-    print(room[2])
-    print(room[3])
-    print(room[4])
-    print()
-
-    
-
-    
-    
+# room = [
+#     ['*', '*', '*', '*', '*',],
+#     ['*', '*', '*', '*', '*',],
+#     ['*', '*', 'R', '*', '*',],
+#     ['*', '*', '*', '*', '*',],
+#     ['*', '*', '*', '*', '*',]
+# ]
 
 # print(room[0])
 # print(room[1])
@@ -205,10 +148,85 @@ while True:
 # print(room[3])
 # print(room[4])
 
+# way = 2
+# step = 2
 
 
 
 
+# while True:
+#     start_end = input("Press enter for star or 0 for break: ")
+#     if start_end == "0":
+#         print(room[0])
+#         print(room[1])
+#         print(room[2])
+#         print(room[3])
+#         print(room[4])
+#         print()
+#         break
+        
+#     while True:
+#         way_input = input("Enter way (RIGHT(r), LEFT(l), UP(u), DOWN(d)): ").lower()
+#         if way_input not in "rlud":
+#             continue
+#         step_input = int(input("Enter step or 0 to break: "))
+#         if step_input not in range(5):
+#             continue
+#         elif step_input == 0:
+#             print(room[0])
+#             print(room[1])
+#             print(room[2])
+#             print(room[3])
+#             print(room[4])
+#             print()
+#             break
 
 
+#         raw = way
+#         if 5 < raw < 0:
+#             break
+#         column = step
+#         if 5 < column < 0:
+#             break
 
+#         if way_input == "r": # "right":
+#             raw = way
+#             column += step_input
+#             if column >= 5:
+#                 break
+
+#         elif way_input == "l": #left":
+#             raw = way
+#             column -= step_input 
+#             if column < 0:
+#                 break
+        
+#         elif way_input == "u": #up":
+#             column = column
+#             raw -= step_input
+#             if raw < 0:
+#                 break
+
+#         elif way_input == "d": #down":
+#             column = column
+#             raw += step_input
+#             if raw >= 5:
+#                 break
+
+
+#         room[way][step] = "*"
+#         room[raw][column] = "R"
+#         way = raw
+#         step = column
+
+#         print(room[0])
+#         print(room[1])
+#         print(room[2])
+#         print(room[3])
+#         print(room[4])
+#         print()
+    
+
+
+# 4
+# ітерація у функціях означає що по них можна пройтись циклом від 0 до останньго і використати дані для потрібних дій
